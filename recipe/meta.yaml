@@ -1,5 +1,5 @@
 {% set name = "pysis" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/USGS-Astrogeology/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ec1561563750293daa3d6d0afdd80989de3064b1d21d2a0a86c092b4c86aeeb3
+  sha256: f47b27f492950aaf20962a3a0bafc9c4b7ef0d582631439160e2bbdd37b4f26d
 
 build:
   skip: True  # [win]
