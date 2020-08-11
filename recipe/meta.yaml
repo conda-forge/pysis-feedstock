@@ -1,5 +1,5 @@
 {% set name = "pysis" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/USGS-Astrogeology/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f47b27f492950aaf20962a3a0bafc9c4b7ef0d582631439160e2bbdd37b4f26d
+  sha256: ff32202ec5b0bc48409d42764b5a6db955a3a4376a96a478b95447fad9234cba
 
 build:
-  skip: True  # [win]
-  number: 1
+  skip: true  # [win]
+  number: 0
   script:
     - bash tests/make_isis_env.sh
     - python setup.py install
