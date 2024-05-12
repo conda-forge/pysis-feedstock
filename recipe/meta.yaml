@@ -11,13 +11,13 @@ source:
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 2
   script:
     - bash tests/make_isis_env.sh
     - python setup.py install
 
 requirements:
-  build:
+  host:
     - setuptools
     - python
     - numpy
